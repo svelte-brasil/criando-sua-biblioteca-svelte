@@ -1,5 +1,11 @@
 # Criando sua biblioteca Svelte
 
+No dia a dia utilizamos várias bibliotecas para Svelte ou Javascript com o objetivo de facilitar nosso trabalho. Bibliotecas de componentes, datas, rotas, gerenciamento de estados, entre outras, são comuns na criação de aplicações. Mas você já parou para pensar em tudo que necessita para criar bibliotecas?
+
+Se você chegou até aqui é porque tem interesse em aprender como desenvolver essas bibliotecas. Aqui vamos entender de forma manual como configurar e desenvolver uma biblioteca.
+
+A biblioteca que iremos criar será um componente que estiliza uma mensagem de erro em requisições dentro de uma aplicação. Ele terá como propriedade um código de erro e uma descrição. Ao seguir esse tutorial já pode mudar as referências de nome para sua biblioteca.
+
 ## Primeiro vamos criar a pasta e inicializar um projeto através do yarn
 
 Nosso primeiro passo é iniciar um projeto através do yarn e criar algumas pastas, você pode mudar o nome da pasta para o de sua biblioteca.
