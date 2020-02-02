@@ -1,0 +1,23 @@
+{
+  "name": "svelte-error-screen",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "André Lins",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "rollup": "^1.31.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-livereload": "^1.0.4",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-svelte": "^5.1.1",
+    "rollup-plugin-terser": "^5.2.0",
+    "sirv-cli": "^0.4.5",
+    "svelte": "^3.18.1"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public"
+  }
+}

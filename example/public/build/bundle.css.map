@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../../App.svelte",
+    "../../index.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n  import SvelteErrorScreen from \"../lib/index.svelte\";\n</script>\n\n<style>\n  main {\n    display: flex;\n    width: 100%;\n    height: 100%;\n    align-items: center;\n    justify-content: center;\n    flex-direction: column;\n  }\n</style>\n\n<main>\n  <SvelteErrorScreen\n    error={500}\n    description=\"Ocorreu um problema no servidor\" />\n</main>\n",
+    "<script>\n  export let error;\n  export let description;\n</script>\n\n<style>\n  div {\n    display: flex;\n    width: 100%;\n    height: 100%;\n    align-items: center;\n    justify-content: center;\n    flex-direction: column;\n    padding: 0 30%;\n    box-sizing: border-box;\n    text-align: center;\n    background-color: #eaeaea;\n    font-family: arial;\n  }\n  h2 {\n    font-size: 80pt;\n    font-weight: 700;\n    margin: 0;\n  }\n  h4 {\n    font-size: 30pt;\n    font-weight: 100;\n    margin: 0;\n  }\n</style>\n\n<div>\n  <h2>{error}</h2>\n  <h4>{description}</h4>\n</div>\n"
+  ],
+  "names": [],
+  "mappings": "AAKE,IAAI,eAAC,CAAC,AACJ,OAAO,CAAE,IAAI,CACb,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,WAAW,CAAE,MAAM,CACnB,eAAe,CAAE,MAAM,CACvB,cAAc,CAAE,MAAM,AACxB,CAAC;ACND,GAAG,cAAC,CAAC,AACH,OAAO,CAAE,IAAI,CACb,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,WAAW,CAAE,MAAM,CACnB,eAAe,CAAE,MAAM,CACvB,cAAc,CAAE,MAAM,CACtB,OAAO,CAAE,CAAC,CAAC,GAAG,CACd,UAAU,CAAE,UAAU,CACtB,UAAU,CAAE,MAAM,CAClB,gBAAgB,CAAE,OAAO,CACzB,WAAW,CAAE,KAAK,AACpB,CAAC,AACD,EAAE,cAAC,CAAC,AACF,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,GAAG,CAChB,MAAM,CAAE,CAAC,AACX,CAAC,AACD,EAAE,cAAC,CAAC,AACF,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,GAAG,CAChB,MAAM,CAAE,CAAC,AACX,CAAC"
+}
