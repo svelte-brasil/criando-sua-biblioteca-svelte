@@ -1,4 +1,4 @@
-# Criando sua biblioteca Svelte
+[![Criando uma biblioteca Svelte](logo.png)](https://andrelmlins.gitbook.io/criando-sua-biblioteca-svelte/)
 
 No dia a dia utilizamos várias bibliotecas para Svelte ou Javascript com o objetivo de facilitar nosso trabalho. Bibliotecas de componentes, datas, rotas, gerenciamento de estados, entre outras, são comuns na criação de aplicações. Mas você já parou para pensar em tudo que necessita para criar bibliotecas?
 
