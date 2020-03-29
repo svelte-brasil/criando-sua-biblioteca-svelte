@@ -6,6 +6,8 @@ Se você chegou até aqui é porque tem interesse em aprender como desenvolver e
 
 A biblioteca que iremos criar será um componente que estiliza uma mensagem de erro em requisições dentro de uma aplicação. Ele terá como propriedade um código de erro e uma descrição. Ao seguir esse tutorial já pode mudar as referências de nome para sua biblioteca.
 
+<em>Essa biblioteca irá funcionar também no sapper, porém, a mesma tem que ser instalada como `devDependency`, leia sobre isso nesse [link](https://github.com/sveltejs/sapper-template#using-external-components)</em>
+
 ## Primeiro vamos criar a pasta e inicializar um projeto através do yarn
 
 Nosso primeiro passo é iniciar um projeto através do yarn e criar algumas pastas, você pode mudar o nome da pasta para o de sua biblioteca.
@@ -273,11 +275,19 @@ Perceba que no build todo o conteúdo será transpilado para uma pasta chamada d
 }
 ```
 
-Além disso nosso projeto tem várias configurações que não serão necessárias no pacote final da nossa biblioteca. Para diminuir o tamanho do pacote e só colocar o essencial, utilize a propriedade `files` para isso, fazendo da seguinte maneira.
+Outra configuração importante é indicar o seu componente Svelte original. Essa configuração irá permitir que o plugin do rollup `rollup-plugin-svelte` utilize seu arquivo de origem na hora de criar o build de uma aplicação, trazendo uma mair performance. Logo, adicione a seguinte configuração ao seu `package.json`.
 
 ```json
 {
-  "files": ["dist", "README.md"]
+  "svelte": "src/lib/index.svelte"
+}
+```
+
+Além disso nosso projeto tem várias configurações que não serão necessárias no pacote final da nossa biblioteca. Para diminuir o tamanho do pacote e só colocar o essencial, utilize a propriedade `files` para informar quais arquivos são necessários, fazendo da seguinte maneira.
+
+```json
+{
+  "files": ["dist", "src/lib/index.svelte"]
 }
 ```
 
