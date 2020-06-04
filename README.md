@@ -89,7 +89,7 @@ Vamos criar a base em svelte para testar nosso componente e configurar a pasta p
 
 ### Crie os arquivos base para iniciar uma aplicação svelte
 
-Primeiro vamos criar o nosso arquivo `main.js`:
+Primeiro vamos criar o nosso arquivo `src/dev/main.js`:
 
 ```js
 import App from "./App.svelte";
@@ -104,7 +104,7 @@ const app = new App({
 export default app;
 ```
 
-Agora vamos criar nosso arquivo svelte, onde iremos visualizar nosso componente da biblioteca.
+Agora vamos criar nosso arquivo svelte `src/dev/App.svelte`, onde iremos visualizar nosso componente da biblioteca.
 
 ```html
 <script>
@@ -275,7 +275,7 @@ Perceba que no build todo o conteúdo será transpilado para uma pasta chamada d
 }
 ```
 
-Outra configuração importante é indicar o seu componente Svelte original. Essa configuração irá permitir que o plugin do rollup `rollup-plugin-svelte` utilize seu arquivo de origem na hora de criar o build de uma aplicação, trazendo uma mair performance. Logo, adicione a seguinte configuração ao seu `package.json`.
+Outra configuração importante é indicar o seu componente Svelte original. Essa configuração irá permitir que o plugin do rollup `rollup-plugin-svelte` utilize seu arquivo de origem na hora de criar o build de uma aplicação, trazendo uma maior performance. Logo, adicione a seguinte configuração ao seu `package.json`.
 
 ```json
 {
