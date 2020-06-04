@@ -275,7 +275,7 @@ Perceba que no build todo o conteúdo será transpilado para uma pasta chamada d
 }
 ```
 
-Outra configuração importante é indicar o seu componente Svelte original. Essa configuração irá permitir que o plugin do rollup `rollup-plugin-svelte` utilize seu arquivo de origem na hora de criar o build de uma aplicação, trazendo uma mair performance. Logo, adicione a seguinte configuração ao seu `package.json`.
+Outra configuração importante é indicar o seu componente Svelte original. Essa configuração irá permitir que o plugin do rollup `rollup-plugin-svelte` utilize seu arquivo de origem na hora de criar o build de uma aplicação, trazendo uma maior performance. Logo, adicione a seguinte configuração ao seu `package.json`.
 
 ```json
 {
@@ -283,7 +283,7 @@ Outra configuração importante é indicar o seu componente Svelte original. Ess
 }
 ```
 
-Além disso nosso projeto tem várias configurações que não serão necessárias no pacote final da nossa biblioteca. Para diminuir o tamanho do pacote e só colocar o essencial, utilize a propriedade `files` para informar quais arquivos são necessários, fazendo da seguinte maneira.
+Além disso nosso projeto tem várias configurações que não serão necessárias no pacote final da nossa biblioteca. Para diminuir o tamanho do pacote e só colocar o que é essencial, utilize a propriedade `files` para informar quais arquivos são necessários, fazendo da seguinte maneira.
 
 ```json
 {
