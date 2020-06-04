@@ -89,7 +89,7 @@ Vamos criar a base em svelte para testar nosso componente e configurar a pasta p
 
 ### Crie os arquivos base para iniciar uma aplicação svelte
 
-Primeiro vamos criar o nosso arquivo `main.js`:
+Primeiro vamos criar o nosso arquivo `src/dev/main.js`:
 
 ```js
 import App from "./App.svelte";
@@ -104,7 +104,7 @@ const app = new App({
 export default app;
 ```
 
-Agora vamos criar nosso arquivo svelte, onde iremos visualizar nosso componente da biblioteca.
+Agora vamos criar nosso arquivo svelte `src/dev/App.svelte`, onde iremos visualizar nosso componente da biblioteca.
 
 ```html
 <script>
