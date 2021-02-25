@@ -1,7 +1,7 @@
 {
   "name": "svelte-error-screen",
   "version": "0.1.0",
-  "svelte": "src/lib/index.svelte",
+  "svelte": "src/ErrorScreen.svelte",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "author": "André Lins",
@@ -9,7 +9,7 @@
   "private": false,
   "files": [
     "dist",
-    "src/lib/index.svelte"
+    "src/ErrorScreen.svelte"
   ],
   "devDependencies": {
     "rollup": "^2.2.0",

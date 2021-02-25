@@ -3,6 +3,11 @@
   export let description;
 </script>
 
+<div>
+  <h2>{error}</h2>
+  <h4>{description}</h4>
+</div>
+
 <style>
   div {
     display: flex;
@@ -28,8 +33,3 @@
     margin: 0;
   }
 </style>
-
-<div>
-  <h2>{error}</h2>
-  <h4>{description}</h4>
-</div>

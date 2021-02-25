@@ -10,11 +10,10 @@ svelte-error-screen
 ├── yarn.lock
 ├── public
 │   ├── build
-│   ├── index.html
-└── src
-    ├── dev
-    │   ├── App.svelte
-    │   └── main.js
-    └──  lib
-        └── index.svelte
+│   └── index.html
+├── src
+│   └── index.svelte
+└── doc
+    ├── App.svelte
+    └── main.js
 ```

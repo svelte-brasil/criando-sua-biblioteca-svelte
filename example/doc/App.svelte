@@ -1,6 +1,13 @@
 <script>
-  import SvelteErrorScreen from "../lib/index.svelte";
+  import SvelteErrorScreen from "../src/ErrorScreen.svelte";
 </script>
+
+<main>
+  <SvelteErrorScreen
+    error={500}
+    description="Ocorreu um problema no servidor"
+  />
+</main>
 
 <style>
   main {
@@ -12,9 +19,3 @@
     flex-direction: column;
   }
 </style>
-
-<main>
-  <SvelteErrorScreen
-    error={500}
-    description="Ocorreu um problema no servidor" />
-</main>
