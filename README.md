@@ -6,9 +6,11 @@ Se você chegou até aqui é porque tem interesse em aprender como desenvolver e
 
 A biblioteca que iremos criar será um componente que estiliza uma mensagem de erro em requisições dentro de uma aplicação. Ele terá como propriedade um código de erro e uma descrição. Ao seguir esse tutorial já pode mudar as referências de nome para sua biblioteca.
 
+> 🔷 **Svelte agora tem suporte para typescript**: para migrar sua biblioteca para typescript acesso o [link](TYPESCRIPT.md)
+
 <em>Nota: essa biblioteca irá funcionar também no sapper, porém, a mesma tem que ser instalada como `devDependency`, leia sobre isso neste [link](https://github.com/sveltejs/sapper-template#using-external-components)</em>
 
-## Primeiro vamos criar a pasta e inicializar um projeto através do yarn
+## 1. Primeiro vamos criar a pasta e inicializar um projeto através do yarn
 
 Nosso primeiro passo é iniciar um projeto através do yarn e criar algumas pastas, você pode mudar o nome da pasta para o de sua biblioteca.
 
@@ -21,15 +23,15 @@ mkdir doc
 yarn init
 ```
 
-## Agora vamos instalar o svelte
+## 2. Agora vamos instalar o svelte
 
 O objetivo aqui é desenvolver biblioteca para Svelte, então vamos instalar sua base de bibliotecas.
 
 ```
-yarn add svelte
+yarn add -D svelte
 ```
 
-## Está na hora de criarmos as configurações
+## 3. Está na hora de criarmos as configurações
 
 Vamos inserir as configurações básicas para inicialização e contrução da nossa biblioteca. O [Rollup](https://rollupjs.org/) é o gerador de bundle padrão do svelte, vamos usar isto tanto para iniciar uma aplicação com nossa biblioteca, como também para fazer a transpilação de nossa bibliteca.
 
@@ -115,7 +117,7 @@ function serve() {
 }
 ```
 
-## Vamos agora criar nossos scripts e ajustar o package.json
+## 4. Vamos agora criar nossos scripts e ajustar o package.json
 
 Para criar os scripts, vá no arquivo `package.json` e insira o seguinte código:
 
@@ -154,7 +156,7 @@ Além disso nosso projeto tem várias configurações que não serão necessári
 }
 ```
 
-## Já podemos iniciar nosso componente que se tornará uma biblioteca
+## 5. Já podemos iniciar nosso componente que se tornará uma biblioteca
 
 Agora que já temos um ambiente configurado, podemos iniciar o desenvolvimento da nossa biblioteca svelte.
 
@@ -198,7 +200,7 @@ Agora que já temos um ambiente configurado, podemos iniciar o desenvolvimento d
 </style>
 ```
 
-## Vamos agora montar a área que iremos visualizar o nosso componente funcionando
+## 6. Vamos agora montar a área que iremos visualizar o nosso componente funcionando
 
 É muito importante podermos testar a nossa biblioteca e visualizar o resultado do nosso componente, vamos a seguir trabalhar nessa etapa.
 
@@ -274,7 +276,7 @@ Para iniciarmos a aplicação através do rollup precisamos de um arquivo base d
 
 ## Agora sim, vamos ver o componente da nossa biblioteca
 
-Rode o comando abaixo na raiz do projeto.
+Execute o comando abaixo na raiz do projeto.
 
 ```bash
 yarn dev
@@ -284,7 +286,7 @@ Acesse `http://localhost:5000/` e verá seu componente.
 
 [comment]: <> (Colocar exemplo de uma aplicação)
 
-## Vamos agora testar a transpilação
+## 7. Vamos agora testar a transpilação
 
 Rode o comando abaixo na raiz do projeto.
 
@@ -294,7 +296,7 @@ yarn build
 
 No diretório `dist` que está na raiz do seu projeto, você verá seu componente transpilado.
 
-## Hora de publicar
+## 8. Hora de publicar
 
 Você já deve está muito feliz por ver seu componente funcionando e querendo usar em seu projeto. Então vamos agora publicar este componente, essa é a etapa mais simples. Rode o seguinte comando:
 
@@ -309,6 +311,6 @@ npm publish
 @[ESCOPO]/[NOME_PROJETO]
 ```
 
-## Estrutura de Arquivos
+## 9. Estrutura de Arquivos
 
 Caso tenha dúvida sobre a estrutura de arquivos geradas após o tutorial, acesse esse [link](ESTRUTURA.md).
