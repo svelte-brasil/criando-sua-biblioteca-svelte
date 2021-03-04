@@ -9,7 +9,7 @@ Caso você tenha seguido o tutorial para javascirpt, a migração será muito si
 Para utilizar svelte com typescript é necessário instalar algumas novas dependências que para a transpilação do typescript e geração de suas declarações. Rode o comando abaixo e instale estas novas dependências.
 
 ```sh
-yarn add -D @rollup-plugin/typescript svelte-preprocess tslib svelte-dts @tsconfig/svelte svelte-transpile-typescript
+yarn add -D @rollup-plugin/typescript svelte-preprocess tslib svelte-dts @tsconfig/svelte svelte-transpile-typescript typescript
 ```
 
 ## 2. Agora precisamos fazer ajustes na configuração do rollup
