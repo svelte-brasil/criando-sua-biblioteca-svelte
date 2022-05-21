@@ -162,7 +162,7 @@ Agora que já temos um ambiente configurado, podemos iniciar o desenvolvimento d
 
 ### Crie o arquivo `src/lib/ErrorScreen.svelte` e coloque o seguinte código
 
-```html
+```svelte
 <script>
   export let error;
   export let description;
@@ -222,7 +222,7 @@ export default app;
 
 Agora vamos criar nosso arquivo svelte `doc/App.svelte`, onde iremos visualizar nosso componente da biblioteca.
 
-```html
+```svelte
 <script>
   import SvelteErrorScreen from "../src/index.svelte";
 </script>
