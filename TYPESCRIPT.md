@@ -115,7 +115,7 @@ Já foi instalado o pacote `svelte-dts` e configurado no rollup para gerar as de
 
 Na nossa biblioteca de exemplo vamos só precisar alterar o conteúdo da tag `script`, identificando que seu conteúdo é typescript e colocando os tipos nas propriedades.
 
-```html
+```svelte
 <!-- ... -->
 
 <script lang="ts">
